@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "traffic_simulation.h"
-
+//file sharing established
 void writeVehicleToFile(FILE *file, Vehicle *vehicle) {
     fprintf(file, "%f %f %d %d %d %d %d\n", 
             vehicle->x, vehicle->y, 
