@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "traffic_simulation.h"
-
+//file sharing established
 void initializeSDL(SDL_Window **window, SDL_Renderer **renderer) {
     SDL_Init(SDL_INIT_VIDEO);
     *window = SDL_CreateWindow("Traffic Simulation", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WINDOW_WIDTH, WINDOW_HEIGHT, SDL_WINDOW_SHOWN);
