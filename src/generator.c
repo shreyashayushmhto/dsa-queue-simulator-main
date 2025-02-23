@@ -45,6 +45,7 @@ int SDL_main(int argc, char *argv[]) {
     fclose(file);
     return 0;
 }
+//vehicle generation delay added
 //Use queue operations to enqueue vehicles into their respective lanes
 // Additional comments for future expansion
 // TODO: Implement priority-based queueing for emergency vehicles
