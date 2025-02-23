@@ -4,6 +4,7 @@
 #include "traffic_simulation.h"
 
 // Global queues for lanes
+// 0 = North, 1 = South, 2 = East, 3 = West
 Queue laneQueues[4];         // Queues for lanes A, B, C, D
 int lanePriorities[4] = {0}; // Priority levels for lanes (0 = normal, 1 = high)
 
