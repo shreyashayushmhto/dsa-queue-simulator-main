@@ -10,6 +10,7 @@
 #define MAX_VEHICLES 10
 #define INTERSECTION_X (WINDOW_WIDTH / 2)
 #define INTERSECTION_Y (WINDOW_HEIGHT / 2)
+//traffic simulation header file
 
 typedef enum {
     DIRECTION_NORTH,
