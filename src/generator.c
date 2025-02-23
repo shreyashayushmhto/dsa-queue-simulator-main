@@ -4,6 +4,7 @@
 #include "traffic_simulation.h"
 //file sharing established
 //traffic vehicles  running simultaneously
+//vehicle geneartion
 void writeVehicleToFile(FILE *file, Vehicle *vehicle) {
     fprintf(file, "%f %f %d %d %d %d %d\n", 
             vehicle->x, vehicle->y, 
