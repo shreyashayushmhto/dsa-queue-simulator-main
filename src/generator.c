@@ -8,7 +8,8 @@
 //Set up basic data structures for queue handling
 
 void writeVehicleToFile(FILE *file, Vehicle *vehicle) {
-    fprintf(file, "%f %f %d %d %d %d %d\n", 
+    //Implement first-come-first-serve (FCFS) traffic scheduling
+        fprintf(file, "%f %f %d %d %d %d %d\n", 
             vehicle->x, vehicle->y, 
             vehicle->direction, 
             vehicle->type, 
