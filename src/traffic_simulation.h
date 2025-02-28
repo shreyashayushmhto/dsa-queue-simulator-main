@@ -83,7 +83,7 @@ typedef struct Node {
     Vehicle vehicle;
     struct Node* next;
 } Node;
-
+//queue data structure in traffic simulation
 typedef struct {
     Node* front;
     Node* rear;
