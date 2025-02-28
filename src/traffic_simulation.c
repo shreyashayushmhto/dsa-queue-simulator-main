@@ -86,6 +86,7 @@ void updateTrafficLights(TrafficLight *lights)
 
 Vehicle *createVehicle(Direction direction)
 {
+   //direction of vehicles stimulation along traffic system
     Vehicle *vehicle = (Vehicle *)malloc(sizeof(Vehicle));
     vehicle->direction = direction;
 
