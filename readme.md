@@ -33,7 +33,8 @@ You'll need:
 
 ```
 DSA-Queue-Simulator/
-├── include/          # Header files
+├── include/          # Header filesg++ -Iinclude -Llib -o bin/main.exe src/main.c src/traffic_simulation.c -lmingw32 -lSDL2main -lSDL2
+```
 ├── lib/              # Library files
 ├── src/              # Source files
 ├── bin/              # Executables
@@ -51,7 +52,6 @@ cd DSA-Queue-Simulator
 2. Compile:
 ```bash
 g++ -Iinclude -Llib -o bin/main.exe src/main.c src/traffic_simulation.c -lmingw32 -lSDL2main -lSDL2
-```
 
 ```bash
 g++ -o bin/generator src/generator.c src/traffic_simulation.c -lSDL2 -Iinclude -Llib -lmingw32 -lSDL2main -lSDL2
