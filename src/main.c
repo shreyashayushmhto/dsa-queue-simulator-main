@@ -85,8 +85,8 @@ int main(int argc, char *argv[]) {
     for (int i = 0; i < 4; i++) {
         initQueue(&laneQueues[i]);
     }
-
     while (running) {
+        // Handling events
         handleEvents(&running);
 
         // Spawn new vehicles periodically
