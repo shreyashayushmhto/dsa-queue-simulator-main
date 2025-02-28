@@ -1,92 +1,122 @@
-# 🚦 Traffic Queue Simulator
+🚦 Real-Time Traffic Queue Simulation
+Hey there! This project is a real-time traffic simulation that showcases how queue data structures can be used for traffic management. It includes different types of vehicles, traffic lights, and priority-based queuing to make traffic flow smooth and realistic.
 
-A real-time traffic simulation showcasing queue data structures & traffic management. Includes multiple vehicle types, traffic lights, and priority-based queue handling.
 
-![Traffic Simulation Demo](demo.gif)
 
-## ✨ Features
+✨ What's Inside?
+🏎️ 4-way intersection simulation in real-time
+🚓🚑🚒 Different vehicle types with priority handling (like ambulances and fire trucks)
+🚦 Traffic light system that dynamically changes
+🔄 Vehicles can turn left, right, or go straight
+🎯 Queue-based traffic management for smoother flow
+⚙️ What You Need
+To run this project, you'll need:
 
-- 🏎️ Real-time 4-way intersection simulation
-- 🚓🚑🚒 Multiple vehicle types with priority handling
-- 🚦 Dynamic traffic light system
-- 🔄 Vehicles can turn left, right, or go straight
-- 🎯 Queue-based traffic management
+🖥️ GCC/G++ compiler (for compiling the code)
+🎮 SDL2 library (for graphics and rendering)
+🏗️ MinGW (for Windows users)
+🛠 How to Install SDL2?
+If you're using Windows:
+🔗 Download SDL2
+📂 Extract the files to your project folder
+🏗 Create these folders if they don’t exist:
+include/ → for header files
+lib/ → for library files
+bin/ → for the executable output
+📂 Project Folder Structure
+Your project will be organized like this:
 
-## ⚙️ Prerequisites
-
-You'll need:
-- 🖥️ GCC/G++ compiler
-- 🎮 SDL2 library
-- 🏗️ MinGW (for Windows)
-
-### 🛠 Installing SDL2
-
-#### Windows Users:
-1. 🔗 [Download SDL2](https://www.libsdl.org/download-2.0.php)
-2. 📂 Extract contents to your project directory
-3. 🏗 Create folders if missing:
-   - `include/` (for headers)
-   - `lib/` (for library files)
-   - `bin/` (for output)
-
-## 📂 Project Structure
-
-```
+makefile
+Copy
+Edit
 DSA-Queue-Simulator/
-├── include/          # Header filesg++ -Iinclude -Llib -o bin/main.exe src/main.c src/traffic_simulation.c -lmingw32 -lSDL2main -lSDL2
-```
-├── lib/              # Library files
-├── src/              # Source files
-├── bin/              # Executables
-└── README.md
-```
+├── include/          # Header files  
+├── lib/              # Library files  
+├── src/              # Source code  
+├── bin/              # Executable files  
+└── README.md         # This file!  
+🚀 Ready to Run?
+Compile and run the project with this command:
 
-## 🏗️ Building the Project
 
-1. Clone the repo:
-```bash
-git clone https://github.com/zen4FR/dsa-queue-simulator.git
-cd DSA-Queue-Simulator
-```
-
-2. Compile:
-```bash
 g++ -Iinclude -Llib -o bin/main.exe src/main.c src/traffic_simulation.c -lmingw32 -lSDL2main -lSDL2
+And that’s it! 🎉 Now you can see the traffic simulation in action. 🚦🚗💨
 
-```bash
-g++ -o bin/generator src/generator.c src/traffic_simulation.c -lSDL2 -Iinclude -Llib -lmingw32 -lSDL2main -lSDL2
-```
 
-## ▶️ Running the Simulation
 
-1. Start the vehicle generator:
-```bash
-./bin/generator
-```
-2. In another terminal, start the main simulation:
-```bash
-./bin/main
-```
-3. 🚗 Watch vehicles navigate the intersection!
-4. ❌ Click the close button (X) to exit.
 
-## 🚙 Vehicle Types
-- 🔵 Regular cars
-- 🔴 Ambulances
-- 🔷 Police cars
-- 🟠 Fire trucks
 
-## 🏁 Traffic Management
 
-- 🚦 **Queue System:** Each lane manages its own queue.
-- 🚨 **Priority Handling:** Emergency vehicles go first.
-- 🔄 **Traffic Light Cycles:** Automated red/green transitions.
-- 🔁 **Turn Management:** Vehicles can turn left, right, or go straight.
+Traffic Queue Simulator
+A real-time traffic simulation implementing queue-based traffic management. The system models a 4-way intersection, incorporating multiple vehicle types, traffic lights, and priority-based queuing.
 
-## 📜 Code Highlights
+Features
+Real-time simulation of a 4-way intersection
+Support for multiple vehicle types with priority handling
+Dynamic traffic light system
+Vehicles can turn left, right, or proceed straight
+Queue-based traffic management for efficient flow control
+Prerequisites
+To build and run the project, ensure you have the following:
 
-### Queue Data Structure
-```c
+GCC/G++ compiler
+SDL2 library
+MinGW (for Windows users)
+Installing SDL2
+For Windows Users:
+Download SDL2 from the official website.
+Extract the contents into the project directory.
+Ensure the following folders exist:
+include/ (for header files)
+lib/ (for library files)
+bin/ (for executable output)
+Project Structure
+
+DSA-Queue-Simulator/
+├── include/          # Header files  
+├── lib/              # Library files  
+├── src/              # Source files  
+├── bin/              # Executables  
+└── README.md  
+Building the Project
+Clone the repository:
+
+bash
+git clone:https://github.com/shreyashayushmhto/dsa-queue-simulator-main
+cd DSA-Queue-Simulator  
+Compile the project:
+
+g++ -Iinclude -Llib -o bin/main.exe src/main.c src/traffic_simulation.c -lmingw32 -lSDL2main -lSDL2  
+bash
+
+g++ -o bin/generator src/generator.c src/traffic_simulation.c -lSDL2 -Iinclude -Llib -lmingw32 -lSDL2main -lSDL2  
+Running the Simulation
+Start the vehicle generator:
+
+./bin/generator  
+In another terminal, run the main simulation:
+
+bash
+./bin/main  
+Observe vehicle movements at the intersection.
+
+Close the simulation by clicking the exit button.
+
+Vehicle Types
+Regular cars
+Ambulances
+Police cars
+Fire trucks
+Traffic Management
+Queue System: Each lane maintains a queue of vehicles.
+Priority Handling: Emergency vehicles receive priority access.
+Traffic Light Cycles: Red and green light transitions occur automatically.
+Turn Management: Vehicles follow predefined movement rules for left, right, and straight directions.
+Code Highlights
+Queue Data Structure
+c
+Copy
+Edit
 typedef struct Node {
     Vehicle vehicle;
     struct Node* next;
@@ -97,32 +127,39 @@ typedef struct {
     Node* rear;
     int size;
 } Queue;
-```
-
-### Vehicle States
-```c
+Vehicle States
+c
+Copy
+Edit
 typedef enum {
     STATE_MOVING,
     STATE_STOPPING,
     STATE_STOPPED,
     STATE_TURNING
 } VehicleState;
-```
-
-## 🤝 Contributing
-
-1. 🍴 Fork the repo
-2. 🌿 Create a branch (`git checkout -b feature/AmazingFeature`)
-3. 💾 Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. 🚀 Push (`git push origin feature/AmazingFeature`)
-5. 🔥 Open a Pull Request
-
-## 📚 References
-- 📖 [SDL2 Documentation](https://wiki.libsdl.org/)
-- 📘 CLRS: Queue Data Structures
-- 🚗 Highway Capacity Manual (Traffic Flow Theory)
-
-## 🙌 Acknowledgments
-- ❤️ SDL2 Dev Team
-- 🔬 Traffic Simulation Research Community
-- 🎯 Contributors & Testers
+Contributing
+Fork the repository.
+Create a new branch:
+bash
+Copy
+Edit
+git checkout -b feature/your-feature  
+Commit changes:
+bash
+Copy
+Edit
+git commit -m "Describe your changes"  
+Push to the branch:
+bash
+Copy
+Edit
+git push origin feature/your-feature  
+Open a pull request.
+References
+SDL2 Documentation
+CLRS: Queue Data Structures
+Highway Capacity Manual (Traffic Flow Theory)
+Acknowledgments
+SDL2 Development Team
+Researchers in Traffic Simulation
+Contributors and Testers
