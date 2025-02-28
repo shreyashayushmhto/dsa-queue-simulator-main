@@ -21,7 +21,7 @@ const SDL_Color VEHICLE_COLORS[] = {
 // renderVehicle(renderer, vehicleType, vehicleRect.x, vehicleRect.y, vehicleRect.w, vehicleRect.h);
 //tried keeping imaeges but was too frustating so goig with the rectangular blocks!! 
 
-
+// Initialize traffic lights
 void initializeTrafficLights(TrafficLight *lights)
 {
     lights[0] = (TrafficLight){
