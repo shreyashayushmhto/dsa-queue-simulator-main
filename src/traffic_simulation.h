@@ -50,6 +50,7 @@ typedef enum {
 #define STOP_LINE_WIDTH 5
 
 typedef struct {
+    // Vehicle properties
     SDL_Rect rect;
     VehicleType type;
     Direction direction;
