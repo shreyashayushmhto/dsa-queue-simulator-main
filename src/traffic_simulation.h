@@ -33,6 +33,7 @@ typedef enum {
 } VehicleState;
 
 typedef enum {
+    // Add more vehicle types here
     REGULAR_CAR,
     AMBULANCE,
     POLICE_CAR,
