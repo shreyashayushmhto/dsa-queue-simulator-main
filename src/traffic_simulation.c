@@ -615,6 +615,7 @@ void initQueue(Queue *q)
 }
 
 void enqueue(Queue *q, Vehicle vehicle)
+//vehicle addition to the queue
 {
     Node *newNode = (Node *)malloc(sizeof(Node));
     newNode->vehicle = vehicle;
