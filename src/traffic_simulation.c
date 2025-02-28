@@ -7,7 +7,7 @@
 // 0 = North, 1 = South, 2 = East, 3 = West
 // 0 = Normal, 1 = High priority
 Queue laneQueues[4];  // Queues for lanes A, B, C, D, E, F
-int lanePriorities[4] = {0}; // Priori ty levels for lanes (0 = normal, 1 = high)
+int lanePriorities[4] = {0}; // Priority levels for lanes (0 = normal, 1 = high)
 
 const SDL_Color VEHICLE_COLORS[] = {
     {0, 0, 255, 255}, // REGULAR_CAR: Blue

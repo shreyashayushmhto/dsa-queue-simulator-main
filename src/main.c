@@ -27,7 +27,7 @@ void handleEvents(bool *running) {
         }
     }
 }
-
+//vehicle creation with random direction
 Vehicle readVehicleFromFile(FILE *file) {
     Vehicle vehicle = {0};
     if (fscanf(file, "%f %f %d %d %d %d %d", 
