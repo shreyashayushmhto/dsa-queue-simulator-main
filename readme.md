@@ -1,5 +1,7 @@
 🚦 Real-Time Traffic Queue Simulation
-Hey there! This project is a real-time traffic simulation that showcases how queue data structures can be used for traffic management. It includes different types of vehicles, traffic lights, and priority-based queuing to make traffic flow smooth and realistic.
+Hey there! This project is a real-time traffic simulation that showcases how queue data structures can be used for traffic management. It includes different types of vehicles, traffic lights, and priority-based queuing to make traffic flow smooth and realistic
+![Traffic Simulation Demo](demo.gif)
+
 
 
 
