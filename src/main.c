@@ -13,6 +13,7 @@ void initializeSDL(SDL_Window **window, SDL_Renderer **renderer) {
 
 
 void cleanupSDL(SDL_Window *window, SDL_Renderer *renderer) {
+    //cleaning up window and renderer frr
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
